@@ -7,6 +7,8 @@
  <artifactId>spring-boot-fundamentals</artifactId>
  <version>1.0.0-SNAPSHOT</version>
  <packaging>war</packaging>
+	
+	<name>SpringBootWAR</name>
  <parent>
   <groupId>org.springframework.boot</groupId>
   <artifactId>spring-boot-starter-parent</artifactId>
