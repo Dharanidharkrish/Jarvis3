@@ -17,5 +17,11 @@ pipeline {
                 }
             }
         }
+	
+	stage('Deploy'){
+		steps{
+			deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://3.19.65.223:8990/')], contextPath: 'jarvis', onFailure: false, war: '**/*.war'
+			}
+		}
       }
 	}
